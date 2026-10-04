@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Vipul Setia · Head of Brand Marketing · Portfolio</title>
+<meta name="description" content="Vipul Setia, Head of Brand Marketing at Cars24. I make brands useful, then I prove it. 32 campaigns across Cars24, Apna and Zomato.">
+<meta name="author" content="Vipul Setia">
+<meta name="theme-color" content="#F2EFE9">
+<link rel="canonical" href="https://setiavipul78.github.io/portfolio/">
+
+<!-- Link previews (LinkedIn, WhatsApp, X) -->
+<meta property="og:type" content="profile">
+<meta property="og:site_name" content="Vipul Setia · Portfolio">
+<meta property="og:title" content="Vipul Setia · Head of Brand Marketing">
+<meta property="og:description" content="I make brands useful. Then I prove it. 32 campaigns, with the thinking and the numbers.">
+<meta property="og:url" content="https://setiavipul78.github.io/portfolio/">
+<meta property="og:image" content="https://setiavipul78.github.io/portfolio/assets/images/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Vipul Setia outside the Cars24 office">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&amp;family=Space+Grotesk:wght@500;700&amp;family=DM+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="assets/images/profile/vipul-setia.webp" type="image/webp">
+<link rel="stylesheet" href="assets/css/styles.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Vipul Setia",
+  "jobTitle": "Head of Brand Marketing",
+  "worksFor": { "@type": "Organization", "name": "Cars24" },
+  "url": "https://setiavipul78.github.io/portfolio/",
+  "image": "https://setiavipul78.github.io/portfolio/assets/images/profile/vipul-setia.webp",
+  "email": "mailto:setiavipul78@gmail.com",
+  "sameAs": ["https://www.linkedin.com/in/vipulsetia78"]
+}
+</script>
+</head>
+<body>
+<div id="app"></div>
+<noscript>
+  <div class="noscript">
+    <h1>Vipul Setia · Head of Brand Marketing, Cars24</h1>
+    <p>This portfolio needs JavaScript to show the work. You can reach Vipul at
+      <a href="mailto:setiavipul78@gmail.com">setiavipul78@gmail.com</a> or on
+      <a href="https://www.linkedin.com/in/vipulsetia78">LinkedIn</a>.</p>
+  </div>
+</noscript>
+
+<!--
+  Page template. {{ name }} is filled in from assets/js/content.js by assets/js/app.js.
+  <sc-for list="{{items}}" as="x"> repeats its contents for each item;
+  <sc-if value="{{flag}}"> shows its contents only when flag is true;
+  data-scfor="items|x" repeats a table row.
+-->
+<template id="tpl">
+<div class="page">
+
+<!-- NAV -->
+<nav class="nav" aria-label="Sections">
+  <div class="nav__inner">
+    <a class="nav__logo" href="#/" onclick="{{ goHome }}">Vipul Setia</a>
+    <div class="nav__tabs scroller" role="tablist" aria-label="Portfolio sections">
+      <sc-for list="{{tabs}}" as="t">
+      <button type="button" role="tab" class="tab" aria-selected="{{t.selected}}" data-focus-key="{{t.key}}" onclick="{{ t.pick }}">{{t.label}}</button>
+      </sc-for>
+    </div>
+    <button type="button" class="nav__contact" onclick="{{ toContact }}">Contact</button>
+  </div>
+</nav>
+
+<main>
+<sc-if value="{{isOverview}}">
+<!-- OVERVIEW -->
+<header class="hero" id="top">
+  <div class="wrap">
+    <div class="hero__grid">
+      <div class="hero__text">
+        <p class="hero__kicker">Head of Brand Marketing, Cars24</p>
+        <h1>Creativity <span class="hl">with</span><br>functionality.</h1>
+        <p class="hero__lede">9 years across Cars24, Apna, Zomato, Pristyn Care and Urban Company, leading brand strategy, creative and measurement.</p>
+        <div class="hero__ctas">
+          <a class="btn btn--solid" href="mailto:{{contact.email}}">Email me</a>
+          <a class="btn" href="{{contact.linkedin}}" target="_blank" rel="noopener">LinkedIn ↗</a>
+          <a class="btn btn--link" href="#/work">See the work →</a>
+        </div>
+      </div>
+      <div class="photos">
+        <figure class="polaroid polaroid--work">
+          <span class="tape tape--corner" aria-hidden="true"></span>
+          <img loading="lazy" decoding="async" src="assets/images/profile/vipul-setia-cars24.webp" width="640" height="640" alt="Vipul Setia outside the Cars24 office">
+          <figcaption>now at Cars24</figcaption>
+        </figure>
+        <figure class="polaroid polaroid--me">
+          <span class="tape" aria-hidden="true"></span>
+          <img fetchpriority="high" src="assets/images/profile/vipul-setia.webp" width="640" height="784" alt="Vipul Setia">
+          <figcaption>not louder. more useful.</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <div class="proof">
+      <sc-for list="{{proof}}" as="k">
+      <div class="note" style="{{k.style}}">
+        <p class="proof__v">{{k.value}}</p>
+        <p class="proof__l">{{k.label}}</p>
+      </div>
+      </sc-for>
+    </div>
+
+    <div class="start">
+      <p class="start__title">Where to start:</p>
+      <div class="start__grid">
+        <a class="start__link" href="#/impact" style="--bg: var(--green)"><strong>The business impact</strong><span>Share, demand and efficiency, before and after →</span></a>
+        <a class="start__link" href="#/work" style="--bg: var(--pink)"><strong>The work</strong><span>Six flagship campaigns, with the thinking →</span></a>
+        <a class="start__link" href="#/career" style="--bg: var(--blue)"><strong>The journey</strong><span>Nine years, five categories, plus recognition →</span></a>
+      </div>
+    </div>
+
+    <div class="think">
+      <h2 class="section-title">How I think</h2>
+      <p class="section-sub">lines from my LinkedIn, tested with real budgets</p>
+      <div class="rules">
+        <sc-for list="{{rules}}" as="r">
+        <div class="note" style="{{r.style}}">
+          <p class="rule__line">{{r.line}}</p>
+          <p class="rule__body">{{r.body}}</p>
+        </div>
+        </sc-for>
+      </div>
+    </div>
+  </div>
+</header>
+</sc-if>
+
+<sc-if value="{{isWork}}">
+<!-- FLAGSHIP WORK -->
+<section id="work">
+  <div class="wrap pad--work">
+    <h2 class="section-title">Flagship work</h2>
+    <p class="section-sub">six campaigns, each with the problem, the idea and the proof</p>
+    <div class="flagship">
+      <sc-for list="{{flagship}}" as="f">
+      <article class="case" style="{{f.style}}">
+        <div class="case__media">
+          <span class="tape" aria-hidden="true"></span>
+          <sc-if value="{{f.hasImg}}">
+          <a class="case__media-link" href="{{f.mediaHref}}" target="_blank" rel="noopener" aria-label="{{f.mediaLabel}}">
+            <img class="case__img" loading="lazy" decoding="async" src="{{f.img}}" alt="{{f.title}}">
+            <sc-if value="{{f.film}}"><span class="play" aria-hidden="true">▶</span></sc-if>
+          </a>
+          </sc-if>
+          <sc-if value="{{f.noImg}}">
+          <a class="case__placeholder" href="{{f.mediaHref}}" target="_blank" rel="noopener" aria-label="{{f.mediaLabel}}">
+            <span class="case__kind">{{f.mediaKind}}</span>
+            <span class="case__ph-title"><span class="case__ph-play" aria-hidden="true">▶</span><span>{{f.title}}</span></span>
+            <span class="case__ph-label">{{f.mediaLabel}} ↗</span>
+          </a>
+          </sc-if>
+        </div>
+        <div class="case__body">
+          <p class="case__where">{{f.where}}</p>
+          <h3 class="case__title">{{f.title}}</h3>
+          <p class="case__line">{{f.line}}</p>
+          <div class="case__pi">
+            <div><p class="eyebrow">Problem</p><p class="case__text">{{f.problem}}</p></div>
+            <div><p class="eyebrow">Idea</p><p class="case__text">{{f.idea}}</p></div>
+          </div>
+          <div class="stats">
+            <sc-for list="{{f.stats}}" as="s">
+            <div class="stat"><p class="stat__v">{{s.value}}</p><p class="stat__l">{{s.label}}</p></div>
+            </sc-for>
+          </div>
+          <div class="actions">
+            <button type="button" class="btn btn--solid btn--sm" onclick="{{ f.open }}">See the full case →</button>
+            <sc-if value="{{f.hasLink}}">
+            <a class="btn btn--sm" href="{{f.link}}" target="_blank" rel="noopener">{{f.cta}} ↗</a>
+            </sc-if>
+          </div>
+        </div>
+      </article>
+      </sc-for>
+    </div>
+  </div>
+</section>
+</sc-if>
+
+<sc-if value="{{isImpact}}">
+<!-- IMPACT -->
+<section id="impact" class="section--white section--boxed">
+  <div class="wrap pad">
+    <h2 class="section-title">Business impact</h2>
+    <p class="section-sub">before and after, on the numbers a business cares about</p>
+    <div class="impact-grid">
+      <sc-for list="{{impact}}" as="m">
+      <div class="metric">
+        <div class="metric__top"><p class="metric__label">{{m.metric}}</p><p class="metric__co">{{m.company}}</p></div>
+        <p class="metric__head">{{m.headline}}</p>
+        <div class="bar"><span class="bar__k">Before</span><div class="bar__track"><div class="bar__fill" style="{{m.beforeStyle}}"></div></div><span class="bar__v">{{m.before}}</span></div>
+        <div class="bar bar--after"><span class="bar__k">After</span><div class="bar__track"><div class="bar__fill" style="{{m.afterStyle}}"></div></div><span class="bar__v">{{m.after}}</span></div>
+        <p class="metric__note">{{m.note}}</p>
+      </div>
+      </sc-for>
+    </div>
+  </div>
+</section>
+</sc-if>
+
+<sc-if value="{{isArchive}}">
+<!-- ALL CAMPAIGNS -->
+<section id="archive">
+  <div class="wrap pad--archive">
+    <h2 class="section-title">All campaigns</h2>
+    <p class="section-sub">the full wall. filter it, or switch to a table</p>
+    <div class="filters">
+      <div>
+        <p class="eyebrow">By the job</p>
+        <div class="scroller" data-keep-scroll="jobs">
+          <sc-for list="{{jobChips}}" as="c">
+          <button type="button" class="pill" aria-pressed="{{c.on}}" data-focus-key="{{c.key}}" onclick="{{ c.pick }}">{{c.label}}</button>
+          </sc-for>
+        </div>
+      </div>
+      <div>
+        <p class="eyebrow">By medium</p>
+        <div class="scroller" data-keep-scroll="mediums">
+          <sc-for list="{{mediumChips}}" as="c">
+          <button type="button" class="pill" aria-pressed="{{c.on}}" data-focus-key="{{c.key}}" onclick="{{ c.pick }}">{{c.label}}</button>
+          </sc-for>
+        </div>
+      </div>
+      <div class="filters__foot">
+        <p class="count" aria-live="polite">{{countText}}</p>
+        <div class="seg" role="group" aria-label="View">
+          <sc-for list="{{viewChips}}" as="v">
+          <button type="button" aria-pressed="{{v.on}}" data-focus-key="{{v.key}}" onclick="{{ v.pick }}">{{v.label}}</button>
+          </sc-for>
+        </div>
+      </div>
+    </div>
+
+    <sc-if value="{{empty}}">
+    <p class="empty">nothing pinned for that combo yet. try another filter.</p>
+    </sc-if>
+
+    <sc-if value="{{isCards}}">
+    <div class="pins">
+      <sc-for list="{{pins}}" as="p">
+      <article class="pin" style="{{p.style}}" onclick="{{ p.open }}">
+        <sc-if value="{{p.hasImg}}">
+        <figure class="pin__photo">
+          <img loading="lazy" decoding="async" src="{{p.img}}" alt="{{p.title}}">
+          <figcaption>{{p.title}}</figcaption>
+        </figure>
+        </sc-if>
+        <sc-if value="{{p.noImg}}">
+        <div class="pin__text">
+          <p class="pin__big">{{p.headline.value}}</p>
+          <p class="pin__title">{{p.title}}</p>
+        </div>
+        </sc-if>
+        <div class="pin__note">
+          <p class="pin__meta">{{p.company}} · {{p.when}}</p>
+          <p class="pin__why">{{p.hook}}</p>
+          <p class="pin__res">{{p.headline.value}}</p>
+          <p class="pin__reslabel">{{p.headline.label}}</p>
+          <button type="button" class="linkbtn" onclick="{{ p.open }}">Open the case →</button>
+        </div>
+      </article>
+      </sc-for>
+    </div>
+    </sc-if>
+
+    <sc-if value="{{isTable}}">
+    <div class="table-wrap">
+      <table class="table">
+        <thead>
+          <tr><th scope="col">Campaign</th><th scope="col">When</th><th scope="col">Medium</th><th scope="col">Headline result</th><th scope="col">Post</th></tr>
+        </thead>
+        <tbody>
+          <tr data-scfor="pins|p">
+            <th scope="row"><button type="button" class="table__open" onclick="{{ p.open }}">{{p.title}}</button><span class="table__co">{{p.company}}</span></th>
+            <td class="nowrap" data-label="When">{{p.when}}</td>
+            <td class="table__med" data-label="Medium">{{p.medText}}</td>
+            <td class="table__res"><strong>{{p.headline.value}}</strong> {{p.headline.label}}</td>
+            <td class="nowrap" data-label="Post"><sc-if value="{{p.hasLink}}"><a href="{{p.link}}" target="_blank" rel="noopener">Open ↗</a></sc-if></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    </sc-if>
+  </div>
+</section>
+</sc-if>
+
+<sc-if value="{{isCareer}}">
+<!-- CAREER -->
+<section id="career" class="section--white">
+  <div class="wrap pad">
+    <h2 class="section-title">Career and scope</h2>
+    <p class="section-sub">nine years, five categories, one habit: every pin ends in a number</p>
+    <div class="roles">
+      <sc-for list="{{career}}" as="r">
+      <div class="role" style="{{r.style}}">
+        <p class="role__year">{{r.year}}</p>
+        <p class="role__co">{{r.company}}</p>
+        <p class="role__title">{{r.role}}</p>
+        <p class="role__what">{{r.summary}}</p>
+      </div>
+      </sc-for>
+    </div>
+    <h3 class="awards-title">Recognition</h3>
+    <div class="awards">
+      <sc-for list="{{awards}}" as="a">
+      <div class="note" style="{{a.style}}">
+        <p class="award__t">{{a.title}}</p>
+        <p class="award__d">{{a.detail}}</p>
+        <sc-if value="{{a.hasLink}}">
+        <a class="award__link" href="{{a.link}}" target="_blank" rel="noopener">My post ↗</a>
+        </sc-if>
+      </div>
+      </sc-for>
+    </div>
+  </div>
+</section>
+</sc-if>
+</main>
+
+<!-- CASE DETAIL -->
+<sc-if value="{{hasSel}}">
+<div class="modal" role="dialog" aria-modal="true" aria-label="{{sel.title}}" onclick="{{ closeBg }}">
+  <div class="modal__panel" tabindex="-1">
+    <div class="modal__bar"><button type="button" class="modal__close" aria-label="Close" onclick="{{ close }}">×</button></div>
+    <p class="modal__meta">{{sel.company}} · {{sel.when}} · {{sel.medText}}</p>
+    <h2 class="modal__title">{{sel.title}}</h2>
+    <p class="modal__why">{{sel.hook}}</p>
+    <sc-if value="{{sel.hasHero}}">
+    <img class="modal__hero" src="{{sel.img}}" alt="{{sel.title}}">
+    </sc-if>
+    <div class="two-col">
+      <div><p class="eyebrow">Objective</p><p class="prose">{{sel.objective}}</p></div>
+      <div><p class="eyebrow">What we did</p><p class="prose">{{sel.whatWeDid}}</p></div>
+    </div>
+    <p class="eyebrow">Results</p>
+    <div class="results">
+      <sc-for list="{{sel.results}}" as="r">
+      <div class="result"><p class="result__v">{{r.value}}</p><p class="result__l">{{r.label}}</p></div>
+      </sc-for>
+    </div>
+    <sc-if value="{{sel.hasGallery}}">
+    <p class="eyebrow">More from the campaign</p>
+    <div class="gallery">
+      <sc-for list="{{sel.gallery}}" as="g">
+      <sc-if value="{{g.hasVideo}}">
+      <a href="{{g.video}}" target="_blank" rel="noopener" aria-label="Watch: {{g.caption}}">
+        <img loading="lazy" decoding="async" src="{{g.src}}" alt="{{g.caption}}">
+        <span class="play play--sm" aria-hidden="true">▶</span>
+      </a>
+      </sc-if>
+      <sc-if value="{{g.noVideo}}">
+      <img loading="lazy" decoding="async" src="{{g.src}}" alt="{{g.caption}}">
+      </sc-if>
+      </sc-for>
+    </div>
+    </sc-if>
+    <sc-if value="{{sel.hasWatch}}">
+    <p class="eyebrow">Watch the work</p>
+    <div class="watch">
+      <sc-for list="{{sel.watch}}" as="w">
+      <a href="{{w.url}}" target="_blank" rel="noopener">
+        <span class="watch__src">{{w.source}}</span>
+        <span class="watch__play" aria-hidden="true">▶</span>
+        <span class="watch__t">{{w.title}}</span>
+      </a>
+      </sc-for>
+    </div>
+    </sc-if>
+    <sc-if value="{{sel.hasPress}}">
+    <p class="eyebrow">In the press</p>
+    <div class="press">
+      <sc-for list="{{sel.press}}" as="pr">
+      <a class="pill" href="{{pr.url}}" target="_blank" rel="noopener">{{pr.title}} ↗</a>
+      </sc-for>
+    </div>
+    </sc-if>
+    <sc-if value="{{sel.hasLink}}">
+    <a class="btn btn--solid" href="{{sel.link}}" target="_blank" rel="noopener">{{sel.cta}} ↗</a>
+    </sc-if>
+  </div>
+</div>
+</sc-if>
+
+<!-- CONTACT -->
+<footer class="footer" id="contact">
+  <div class="wrap">
+    <p class="footer__kicker">always up for a good conversation about brands</p>
+    <h2>Brands people choose, not just notice.</h2>
+    <div class="footer__ctas">
+      <a class="btn btn--solid" href="mailto:{{contact.email}}">{{contact.email}}</a>
+      <a class="btn" href="{{contact.linkedin}}" target="_blank" rel="noopener">LinkedIn ↗</a>
+      <a class="btn" href="{{contact.phoneLink}}">{{contact.phone}}</a>
+    </div>
+  </div>
+</footer>
+
+</div>
+</template>
+
+<script src="assets/js/content.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
